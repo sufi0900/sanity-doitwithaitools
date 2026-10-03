@@ -171,6 +171,40 @@
         "meta-title-generator",
         "meta-description-generator"
       ]
+    },
+    {
+      "id": "article-outline-generator",
+      "slug": "article-outline-generator",
+      "name": "Article Outline Generator",
+      "description": "Shape an article plan with heading alternatives, section goals, evidence prompts, and editable H2/H3 structure.",
+      "categories": [
+        "ai-seo",
+        "content-writing"
+      ],
+      "tags": [
+        "outlines",
+        "article planning",
+        "headings"
+      ],
+      "kind": "AI-assisted",
+      "status": "live",
+      "addedAt": "2026-10-03",
+      "featuredOrder": 6,
+      "relatedGuides": [
+        {
+          "path": "/ai-seo/blog-introduction",
+          "title": "How to plan a useful blog introduction"
+        },
+        {
+          "path": "/ai-seo/chatgpt-target-audience-research",
+          "title": "Understand your intended reader"
+        }
+      ],
+      "relatedToolSlugs": [
+        "h1-heading-generator",
+        "meta-title-generator",
+        "meta-description-generator"
+      ]
     }
   ]
 }
