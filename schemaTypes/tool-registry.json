@@ -26,15 +26,8 @@
       "slug": "meta-title-generator",
       "name": "Meta Title Generator",
       "description": "Compare AI-assisted title ideas with pixel checks and a search-result preview.",
-      "categories": [
-        "ai-seo",
-        "content-writing"
-      ],
-      "tags": [
-        "title tags",
-        "SERP",
-        "content"
-      ],
+      "categories": ["ai-seo", "content-writing"],
+      "tags": ["title tags", "SERP", "content"],
       "legacyPath": "/ai-seo/meta-title-generator",
       "kind": "AI-assisted",
       "status": "live",
@@ -58,15 +51,8 @@
       "slug": "slug-generator",
       "name": "Slug Generator",
       "description": "Create short, readable URL slugs that reflect your page's subject and intent.",
-      "categories": [
-        "ai-seo",
-        "content-writing"
-      ],
-      "tags": [
-        "URLs",
-        "permalinks",
-        "content"
-      ],
+      "categories": ["ai-seo", "content-writing"],
+      "tags": ["URLs", "permalinks", "content"],
       "legacyPath": "/ai-seo/slug-url-generator",
       "kind": "AI-assisted",
       "status": "live",
@@ -90,14 +76,8 @@
       "slug": "schema-markup-generator",
       "name": "Schema Markup Generator",
       "description": "Prepare and validate structured data for your pages. Review the output before adding it to your website.",
-      "categories": [
-        "ai-seo"
-      ],
-      "tags": [
-        "JSON-LD",
-        "structured data",
-        "technical SEO"
-      ],
+      "categories": ["ai-seo"],
+      "tags": ["JSON-LD", "structured data", "technical SEO"],
       "legacyPath": "/ai-seo/schema-markup-generator",
       "kind": "AI-assisted",
       "status": "live",
@@ -121,14 +101,8 @@
       "slug": "meta-description-generator",
       "name": "Meta Description Generator",
       "description": "Draft and compare page-specific meta descriptions with character checks and an illustrative preview.",
-      "categories": [
-        "ai-seo",
-        "content-writing"
-      ],
-      "tags": [
-        "snippets",
-        "content"
-      ],
+      "categories": ["ai-seo", "content-writing"],
+      "tags": ["snippets", "content"],
       "kind": "AI-assisted",
       "status": "live",
       "addedAt": "2026-10-03",
@@ -139,24 +113,15 @@
           "title": "How to write meta descriptions"
         }
       ],
-      "relatedToolSlugs": [
-        "meta-title-generator",
-        "h1-heading-generator"
-      ]
+      "relatedToolSlugs": ["meta-title-generator", "h1-heading-generator"]
     },
     {
       "id": "h1-heading-generator",
       "slug": "h1-heading-generator",
       "name": "H1 Heading Generator",
       "description": "Create and compare clear main headings based on the content your page actually offers.",
-      "categories": [
-        "ai-seo",
-        "content-writing"
-      ],
-      "tags": [
-        "headings",
-        "content"
-      ],
+      "categories": ["ai-seo", "content-writing"],
+      "tags": ["headings", "content"],
       "kind": "AI-assisted",
       "status": "live",
       "addedAt": "2026-10-03",
@@ -167,25 +132,15 @@
           "title": "How to write H1 headings"
         }
       ],
-      "relatedToolSlugs": [
-        "meta-title-generator",
-        "meta-description-generator"
-      ]
+      "relatedToolSlugs": ["meta-title-generator", "meta-description-generator"]
     },
     {
       "id": "article-outline-generator",
       "slug": "article-outline-generator",
       "name": "Article Outline Generator",
       "description": "Shape an article plan with heading alternatives, section goals, evidence prompts, and editable H2/H3 structure.",
-      "categories": [
-        "ai-seo",
-        "content-writing"
-      ],
-      "tags": [
-        "outlines",
-        "article planning",
-        "headings"
-      ],
+      "categories": ["ai-seo", "content-writing"],
+      "tags": ["outlines", "article planning", "headings"],
       "kind": "AI-assisted",
       "status": "live",
       "addedAt": "2026-10-03",
@@ -203,7 +158,8 @@
       "relatedToolSlugs": [
         "h1-heading-generator",
         "meta-title-generator",
-        "meta-description-generator"
+        "meta-description-generator",
+        "image-alt-text-generator"
       ]
     },
     {
@@ -211,15 +167,8 @@
       "slug": "readability-checker",
       "name": "Readability Checker and Improver",
       "description": "Inspect long passages locally and compare editable AI revisions while reviewing meaning and important details.",
-      "categories": [
-        "ai-seo",
-        "content-writing"
-      ],
-      "tags": [
-        "readability",
-        "editing",
-        "plain language"
-      ],
+      "categories": ["ai-seo", "content-writing"],
+      "tags": ["readability", "editing", "plain language"],
       "kind": "AI-assisted",
       "status": "live",
       "addedAt": "2026-10-04",
@@ -233,6 +182,30 @@
       "relatedToolSlugs": [
         "article-outline-generator",
         "h1-heading-generator",
+        "meta-description-generator",
+        "image-alt-text-generator"
+      ]
+    },
+    {
+      "id": "image-alt-text-generator",
+      "slug": "image-alt-text-generator",
+      "name": "Image Alt Text Generator",
+      "description": "Draft image alternatives from uploads or descriptions, consider page purpose, and review editable wording before publishing.",
+      "categories": ["ai-seo", "content-writing"],
+      "tags": ["images", "alt text", "accessibility"],
+      "kind": "AI-assisted",
+      "status": "live",
+      "addedAt": "2026-10-04",
+      "featuredOrder": 8,
+      "relatedGuides": [
+        {
+          "path": "/ai-seo/ai-alt-text-generators",
+          "title": "Alt text prompts and image writing guidance"
+        }
+      ],
+      "relatedToolSlugs": [
+        "readability-checker",
+        "article-outline-generator",
         "meta-description-generator"
       ]
     }
