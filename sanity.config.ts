@@ -5,7 +5,7 @@ import { schemaTypes } from './schemaTypes';
 import { table } from '@sanity/table';
 import { media } from 'sanity-plugin-media';
 
-import {theme as _theme} from 'https://themer.sanity.build/api/hues?preset=pixel-art'
+import {theme as _theme} from './styles/theme'
 const theme = _theme as import('sanity').StudioTheme
 // import {theme} from 'https://themer.sanity.build/api/hues?preset=pixel-art'
 export default defineConfig({

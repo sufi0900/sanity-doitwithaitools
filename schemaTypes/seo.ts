@@ -1,3 +1,4 @@
+import { toolRelationshipFields } from "./tool-relationships";
 import { metaValidation, titleValidation, commonImageFields } from './objects/commonFields';
 import {
   EditAttributes,
@@ -80,6 +81,7 @@ const contentBlocks = {
           type: 'object',
           title: 'Link',
           fields: [
+    ...toolRelationshipFields,
             {
               name: 'href',
               type: 'url',
@@ -213,7 +215,24 @@ export const seo = {
         disableNew: true
       }
     },
-   
+    {
+      name: "slug",
+      type: "slug",
+      title: "URL Slug",
+      group: 'content',
+      options: {
+        source: "title",
+        maxLength: 196,
+        slugify: (input: string) => input
+          .toLowerCase()
+          .replace(/\s+/g, '-')
+          .replace(/[^\w-]/g, '')
+          .slice(0, 196),
+    
+      },
+      validation: (Rule: { required: () => any; }) => Rule.required(),
+      description: 'Unique URL-friendly slug'
+    },
     {
       name: "overview",
       title: "Overview",
@@ -264,25 +283,6 @@ export const seo = {
         ...STYLE_CONFIGS.text,
       }
     },
-    {
-      name: "slug",
-      type: "slug",
-      title: "URL Slug",
-      group: 'meta',
-      options: {
-        source: "metatitle",
-        maxLength: 196,
-        slugify: (input: string) => input
-          .toLowerCase()
-          .replace(/\s+/g, '-')
-          .replace(/[^\w-]/g, '')
-          .slice(0, 196),
-    
-      },
-      validation: (Rule: { required: () => any; }) => Rule.required(),
-      description: 'Unique URL-friendly slug'
-    },
-
     {
       name: "metadesc",
       title: "Meta Description",
